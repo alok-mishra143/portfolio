@@ -4,12 +4,15 @@ import React from "react";
 import { AllProjectdata } from "@/data/data";
 import Link from "next/link";
 import TittleButton from "@/components/ui/TittleButton";
-import { SiGithub } from "react-icons/si";
+import { SiGithub, SiHomeadvisor } from "react-icons/si";
 import { AllLinks } from "@/data/data";
 const page = () => {
   return (
     <div className="max-w-7xl mx-auto w-full">
       <div className="flex-col  items-center justify-center  m-5 ">
+        <Link href={"/"} className="text-3xl">
+          <SiHomeadvisor />
+        </Link>
         <TittleButton
           tittle={"ALL PROJECTS 💻"}
           classname="flex flex-col items-center justify-center -rotate-4 m-5 "
