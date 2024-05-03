@@ -1,3 +1,4 @@
+import { AllLinks } from "@/data/data";
 import React, { useState } from "react";
 
 interface CustomButtonProps {
@@ -6,7 +7,7 @@ interface CustomButtonProps {
 
 const CustomButton = (props: CustomButtonProps) => {
   const [buttonName, setButtonName] = useState(props.name);
-  const email = "hey.alokmishra@gmail.com";
+  const email = AllLinks.email;
   const handleCopyEmail = () => {
     navigator.clipboard
       .writeText(email)

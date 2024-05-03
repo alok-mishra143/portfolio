@@ -20,10 +20,10 @@ const project = () => {
                 imageUrl={item.cover}
                 className="w-full space-y-2 cursor-pointer "
               >
-                <div className="space-y-3 bg-black p-5 rounded-md ">
+                <div className="space-y-3 bg-black/30  p-5 rounded-md ">
                   <h1 className="font-bold text-xl">{item.title}</h1>
                   <h2 className="text-gray-400 p-2">{item.description}</h2>
-                  <div className="flex justify-center items-center gap-2">
+                  <div className="flex items-center gap-2">
                     {item.tech.map((Icon, index) => (
                       <Icon key={index} className="w-6 h-6 " />
                     ))}

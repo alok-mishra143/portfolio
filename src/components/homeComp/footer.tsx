@@ -6,12 +6,16 @@ import { SiPagekit } from "react-icons/si";
 import CustomButton from "./CustomButton";
 import { SocialMediaData } from "@/data/data";
 import Link from "next/link";
+import { AllLinks } from "@/data/data";
 
 const Footer = () => {
-  const email = "hey.alokmishra@gmail.com";
+  const email = AllLinks.email;
 
   return (
-    <div className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md" id="connectme">
+    <div
+      className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md"
+      id="connectme"
+    >
       <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20">
         ALOK MISHRA
       </h1>
@@ -41,7 +45,12 @@ const Footer = () => {
       </div>
       <div className="flex items-center gap-5 mt-10 ">
         {SocialMediaData.map((social) => (
-          <Link href={social.link} key={social.id} aria-label={social.title}>
+          <Link
+            href={social.link}
+            key={social.id}
+            aria-label={social.title}
+            target="_blank"
+          >
             <social.icon className="w-5 h-5 hover:scale-125 transition-all" />
           </Link>
         ))}
