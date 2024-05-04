@@ -9,7 +9,7 @@ import { AllLinks } from "@/data/data";
 const page = () => {
   return (
     <div className="max-w-7xl mx-auto w-full">
-      <div className="bg-[#c026d3] w-[60%] h-[60%] absolute lg:blur-[300px] blur-[150px]  lg:translate-y-[60%] md:translate-y-[5%]hidden"></div>
+      <div className="bg-[#c026d3] w-[60%] h-[60%] absolute lg:blur-[300px] blur-[150px]  lg:translate-y-[60%] md:translate-y-[5%] hidden lg:flex "></div>
       <div className="flex-col  items-center justify-center  m-5 ">
         <Link href={"/"} className="text-3xl">
           <SiHomeadvisor />

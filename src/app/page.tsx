@@ -6,7 +6,7 @@ import Project from "@/components/homeComp/project";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black overflow-hidden maindiv">
+    <div className="min-h-screen bg-black overflow-hidden ">
       <div className="dark:bg-black bg-white  dark:bg-dot-white/[0.1] bg-dot-black/[0.2]">
         <div className=" max-w-7xl mx-auto p-5">
           <Navbar />

@@ -8,9 +8,9 @@ import { Typewriter } from "react-simple-typewriter";
 import { AllLinks } from "@/data/data";
 const HeroSection = () => {
   return (
-    <div className=" min-h-[60vh]  flex items-center justify-center w-full animate-moveup ">
+    <div className=" min-h-[60vh]  flex items-center justify-center w-full   ">
       <div className="w-full flex flex-col-reverse gap-16 lg:flex-row items-center justify-between">
-        <div className="space-y-10 text-center lg:text-left">
+        <div className="space-y-10 text-center lg:text-left fadein ">
           <h1 className="text-4xl lg:text-7xl font-bold">
             Nice to meet you! 👋 <br />
             <span className="  flex gap-3">
@@ -44,7 +44,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div>
+        <div className="fadein">
           <Shap />
         </div>
       </div>

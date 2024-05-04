@@ -83,3 +83,46 @@
   box-shadow: 0 0 200px 130px #c026d3;
   animation: glow-animation 5s infinite alternate;
 }
+
+.moveright {
+  animation: move-right 1s ease-in;
+}
+
+@keyframes move-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.showup {
+  animation: show-up 1s ease-in;
+}
+
+@keyframes show-up {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadein {
+  animation: fade-in 2s ease-in;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
