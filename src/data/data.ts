@@ -1,3 +1,4 @@
+import { join } from "path";
 import {
   SiClerk,
   SiCplusplus,
@@ -48,7 +49,7 @@ export const SocialMediaData = [
   },
   {
     id: 4,
-    tittle: "LeetCode",
+    title: "LeetCode",
     icon: SiLeetcode,
     link: AllLinks.leetcode,
   },
@@ -99,7 +100,7 @@ export const ProjectData = [
     tech: [SiNextdotjs, SiTailwindcss, SiMongodb, SiClerk, SiGooglebard],
     description:
       "Advance version of Stackover flow  with more features and better UI/UX.",
-    cover: "/project/devflow.png",
+    cover: "/project/Devflow.png",
     bgcolor: "bg-red-500",
     link: "https://github.com/alok-mishra143/Dev-flow",
   },
@@ -135,7 +136,7 @@ export const AllProjectdata = [
     tech: [SiNextdotjs, SiTailwindcss, SiMongodb, SiClerk, SiGooglebard],
     description:
       "Advance version of Stackover flow  with more features and better UI/UX.",
-    cover: "/project/devflow.png",
+    cover: "/project/Devflow.png",
     bgcolor: "bg-red-500",
     link: "https://github.com/alok-mishra143/Dev-flow",
   },
