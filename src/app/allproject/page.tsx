@@ -9,6 +9,7 @@ import { AllLinks } from "@/data/data";
 const page = () => {
   return (
     <div className="max-w-7xl mx-auto w-full">
+      <div className="bg-[#c026d3] w-[60%] h-[60%] absolute lg:blur-[300px] blur-[150px]  lg:translate-y-[60%] md:translate-y-[5%]hidden"></div>
       <div className="flex-col  items-center justify-center  m-5 ">
         <Link href={"/"} className="text-3xl">
           <SiHomeadvisor />
@@ -33,11 +34,11 @@ const page = () => {
           <Link
             key={index}
             href={project.link}
-            className="col-span-1 lg:col-span-2 h-full  min-h-[500px] lg:min-h-[300px]"
+            className="col-span-1 lg:col-span-2 h-full  min-h-[400px] lg:min-h-[300px]"
             target="_blank"
           >
             <WobbleCard
-              containerClassName="col-span-1 lg:col-span-2 h-full  min-h-[500px] lg:min-h-[300px]"
+              containerClassName="col-span-1 lg:col-span-2 h-full  min-h-[400px] lg:min-h-[300px]"
               className={`${project.bgcolor}`}
             >
               <div className="lg:max-w-xs z-10 bg-black/50 backdrop-blur-sm rounded-md md:max-w-md  w-full">

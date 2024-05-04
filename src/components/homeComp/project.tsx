@@ -7,7 +7,8 @@ import { DirectionAwareHover } from "../ui/direction-aware-hover";
 
 const project = () => {
   return (
-    <div className="max-w-7xl mx-auto mt-20 p-5  ">
+    <div className="max-w-7xl mx-auto mt-20 p-5  relative">
+      <div className="bg-[#c026d3] w-40 h-40 absolute blur-[100px] rounded-full items-center justify-center translate-x-[100%] translate-y-[40%] -z-2 lg:translate-x-[280%] md:translate-x-[180%]"></div>
       <TittleButton
         tittle={"Projects 🟢"}
         classname="flex flex-col items-center justify-center rotate-6"
@@ -20,7 +21,7 @@ const project = () => {
                 imageUrl={item.cover}
                 className="w-full space-y-2 cursor-pointer "
               >
-                <div className="space-y-3 bg-black/30  p-5 rounded-md ">
+                <div className="space-y-3 bg-black/70  p-5 rounded-md ">
                   <h1 className="font-bold text-xl">{item.title}</h1>
                   <h2 className="text-gray-400 p-2">{item.description}</h2>
                   <div className="flex items-center gap-2">

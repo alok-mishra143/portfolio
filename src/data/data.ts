@@ -123,7 +123,7 @@ export const ProjectData = [
   {
     title: "PassWord Generator",
     tech: [SiReact, SiTailwindcss, SiNodedotjs],
-    description: "This is a project",
+    description: "Generate password with this simple password generator.",
     cover: "/project/PasswordGen.png",
     bgcolor: "bg-pink-500",
     link: "https://github.com/alok-mishra143/PasswordGen",

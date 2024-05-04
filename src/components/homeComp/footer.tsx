@@ -13,7 +13,7 @@ const Footer = () => {
 
   return (
     <div
-      className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md"
+      className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md relative "
       id="connectme"
     >
       <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20">
@@ -55,6 +55,7 @@ const Footer = () => {
           </Link>
         ))}
       </div>
+      <div className=" bg-gradient-to-t from-[#bf26d3] to-black h-10 lg:w-[50%] absolute blur-[50px] sm:w-[50%] w-[50%]   overflow-hidden top-36 opacity-65"></div>
     </div>
   );
 };
