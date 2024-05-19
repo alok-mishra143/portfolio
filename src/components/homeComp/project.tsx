@@ -37,7 +37,7 @@ const project = () => {
       </div>
 
       <div className="flex justify-center items-center p-1  ">
-        <div className="rounded-lg bg-gradient-to-r from-[#ff00cc] to-[#3333ff] hover:from-[#ff33cc] hover:to-[#6633ff] hover:text-white inline-block p-3 m-5">
+        <div className="rounded-lg bg-gradient-to-r from-[#ff00cc] to-[#3333ff] hover:from-[#ff33cc] hover:to-[#6633ff] hover:text-white inline-block p-3 m-5 hover:scale-105 transition-all">
           <Link href={"/allproject"}> View all project</Link>
         </div>
       </div>

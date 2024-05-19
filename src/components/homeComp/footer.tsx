@@ -40,8 +40,8 @@ const Footer = () => {
         <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
       </div>
       <div className=" flex items-center justify-center gap-5">
-        <h1>{email}</h1>
-        <CustomButton name="Copy" />
+        <h1 className="cursor-default">{email}</h1>
+        <CustomButton name="COPY" />
       </div>
       <div className="flex items-center gap-5 mt-10 ">
         {SocialMediaData.map((social) => (
@@ -51,11 +51,10 @@ const Footer = () => {
             aria-label={social.title}
             target="_blank"
           >
-            <social.icon className="w-5 h-5 hover:scale-125 transition-all" />
+            <social.icon className="w-6 h-6 hover:scale-125 transition-all" />
           </Link>
         ))}
       </div>
-      <div className=" bg-gradient-to-t from-[#bf26d3] to-black h-10 lg:w-[50%] absolute blur-[50px] sm:w-[50%] w-[50%]   overflow-hidden top-36 opacity-65"></div>
     </div>
   );
 };

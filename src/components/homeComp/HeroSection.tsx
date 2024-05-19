@@ -20,7 +20,7 @@ const HeroSection = () => {
                   words={["FullStack dev", "Gamer", "AI Enthusiast"]}
                   loop={0}
                   cursor
-                  typeSpeed={70}
+                  typeSpeed={50}
                   deleteSpeed={50}
                   delaySpeed={1000}
                 />
@@ -34,11 +34,15 @@ const HeroSection = () => {
             <Link
               href={AllLinks.resume}
               target="_blank"
-              className="cursor-pointer"
+              className="cursor-pointer hover:scale-105 transition-all"
             >
               <TittleButton tittle={"MY CV"} />
             </Link>
-            <Link href={"#connectme"} className="cursor-pointer" scroll={true}>
+            <Link
+              href={"#connectme"}
+              className="cursor-pointer hover:scale-105 transition-all"
+              scroll={true}
+            >
               <TittleButton tittle={"Contact me "} />
             </Link>
           </div>

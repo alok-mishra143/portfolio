@@ -19,11 +19,11 @@ const Shap = () => {
 
         <div className=" absolute -z-10  h-10 w-10 bg-white top-[40%] right-1/2 glow animate-roundLight"></div>
       </div>
-      <div className="absolute bottom-9 sm:bottom-14 left-12 sm:-left-10">
+      <div className="absolute bottom-9 sm:bottom-14 left-12 sm:-left-10 hover:scale-105 transition-all">
         <HoverBorderGradient
           containerClassName="rounded-full"
           as="button"
-          className="dark:bg-black/70 bg-white text-black dark:text-white flex items-center space-x-2 backdrop-blur-md "
+          className="dark:bg-black/70 bg-white text-black dark:text-white flex items-center space-x-2  "
         >
           <span>💼Avaialbe for Work</span>
         </HoverBorderGradient>
