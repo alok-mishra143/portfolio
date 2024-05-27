@@ -6,6 +6,7 @@ import Shap from "../shap";
 import TittleButton from "../ui/TittleButton";
 import { Typewriter } from "react-simple-typewriter";
 import { AllLinks } from "@/data/data";
+import WordRotate from "../ui/word-rotate";
 const HeroSection = () => {
   return (
     <div className=" min-h-[60vh]  flex items-center justify-center w-full   ">
@@ -16,13 +17,23 @@ const HeroSection = () => {
             <span className="  flex gap-3">
               I&apos;m{" "}
               <span className={`decoration-green-500 underline`}>
-                <Typewriter
+                {/* <Typewriter
                   words={["FullStack dev", "Gamer", "AI Enthusiast"]}
                   loop={0}
                   cursor
                   typeSpeed={50}
                   deleteSpeed={50}
                   delaySpeed={1000}
+                /> */}
+
+                <WordRotate
+                  words={[
+                    "FullStack dev",
+                    "Gamer",
+                    "AI Enthusiast",
+                    "UI/UX Designer",
+                    "Tech Enthusiast",
+                  ]}
                 />
               </span>
             </span>{" "}
