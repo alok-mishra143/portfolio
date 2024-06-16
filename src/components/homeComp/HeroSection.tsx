@@ -7,25 +7,17 @@ import TittleButton from "../ui/TittleButton";
 import { Typewriter } from "react-simple-typewriter";
 import { AllLinks } from "@/data/data";
 import WordRotate from "../ui/word-rotate";
+import { cn } from "@/lib/utils";
 const HeroSection = () => {
   return (
     <div className=" min-h-[60vh]  flex items-center justify-center w-full   ">
       <div className="w-full flex flex-col-reverse gap-16 lg:flex-row items-center justify-between">
         <div className="space-y-10 text-center lg:text-left fadein ">
-          <h1 className="text-4xl lg:text-7xl font-bold">
+          <h1 className="text-xl lg:text-7xl font-bold sm:text-4xl">
             Nice to meet you! 👋 <br />
             <span className="  flex gap-3">
               I&apos;m{" "}
               <span className={`decoration-green-500 underline`}>
-                {/* <Typewriter
-                  words={["FullStack dev", "Gamer", "AI Enthusiast"]}
-                  loop={0}
-                  cursor
-                  typeSpeed={50}
-                  deleteSpeed={50}
-                  delaySpeed={1000}
-                /> */}
-
                 <WordRotate
                   words={[
                     "FullStack dev",
@@ -59,7 +51,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="fadein">
+        <div className="  fadein">
           <Shap />
         </div>
       </div>

@@ -13,6 +13,7 @@ import {
   SiNextdotjs,
   SiNodedotjs,
   SiReact,
+  SiSupabase,
   SiTailwindcss,
   SiX,
 } from "react-icons/si";
@@ -96,6 +97,14 @@ export const SkillData = [
 
 export const ProjectData = [
   {
+    title: "CYPRESS",
+    tech: [SiNextdotjs, SiTailwindcss, SiDrizzle, SiSupabase],
+    description: "Clone of Notion that is build with Next.js and Tailwind CSS.",
+    cover: "/project/Notion.png",
+    bgcolor: "bg-yellow-500",
+    link: "https://github.com/alok-mishra143/notionV2",
+  },
+  {
     title: "DevFlow",
     tech: [SiNextdotjs, SiTailwindcss, SiMongodb, SiClerk, SiGooglebard],
     description:
@@ -113,20 +122,12 @@ export const ProjectData = [
     link: "https://github.com/alok-mishra143/GenZbot",
   },
   {
-    title: "Kanban Board",
-    tech: [SiNextdotjs, SiTailwindcss, SiNodedotjs],
-    description: "Organize your work with this Kanban board.",
-    cover: "/project/Kanban.png",
-    bgcolor: "bg-blue-500",
-    link: "https://github.com/alok-mishra143/Kanban-board",
-  },
-  {
-    title: "PassWord Generator",
-    tech: [SiReact, SiTailwindcss, SiNodedotjs],
-    description: "Generate password with this simple password generator.",
-    cover: "/project/PasswordGen.png",
-    bgcolor: "bg-pink-500",
-    link: "https://github.com/alok-mishra143/PasswordGen",
+    title: "BrainWave",
+    tech: [SiNextdotjs, SiTailwindcss],
+    description: "My frontend project",
+    cover: "/project/BrainWave.png",
+    bgcolor: "bg-[#047857]",
+    link: "https://github.com/alok-mishra143/BrainWave",
   },
 ];
 
@@ -139,6 +140,16 @@ export const AllProjectdata = [
     cover: "/project/Devflow.png",
     bgcolor: "bg-red-500",
     link: "https://github.com/alok-mishra143/Dev-flow",
+    plink: "https://alok-devflow.vercel.app/",
+  },
+  {
+    title: "CYPRESS",
+    tech: [SiNextdotjs, SiTailwindcss, SiDrizzle, SiSupabase],
+    description: "Clone of Notion that is build with Next.js and Tailwind CSS.",
+    cover: "/project/Notion.png",
+    bgcolor: "bg-yellow-500",
+    link: "https://github.com/alok-mishra143/notionV2",
+    plink: "https://notion-v2.vercel.app/",
   },
   {
     title: "Bard-clone",
@@ -147,6 +158,7 @@ export const AllProjectdata = [
     cover: "/project/BardClone.png",
     bgcolor: "bg-green-500",
     link: "https://github.com/alok-mishra143/bard-clone",
+    plink: "https://github.com/alok-mishra143/bard-clone",
   },
   {
     title: "GenZbot",
@@ -155,6 +167,7 @@ export const AllProjectdata = [
     cover: "/project/GenZbot.png",
     bgcolor: "bg-[#6b21a8]",
     link: "https://github.com/alok-mishra143/GenZbot",
+    plink: "https://gen-zbot.vercel.app/",
   },
   {
     title: "BrainWave",
@@ -163,6 +176,7 @@ export const AllProjectdata = [
     cover: "/project/BrainWave.png",
     bgcolor: "bg-[#047857]",
     link: "https://github.com/alok-mishra143/BrainWave",
+    plink: "https://brainwave-two-kappa.vercel.app/",
   },
   {
     title: "Kanban Board",
@@ -171,6 +185,7 @@ export const AllProjectdata = [
     cover: "/project/Kanban.png",
     bgcolor: "bg-[#ea580c]",
     link: "https://github.com/alok-mishra143/Kanban-board",
+    plink: "https://kanban-board-lilac-eight.vercel.app/",
   },
   {
     title: "PassWord Generator",
@@ -179,6 +194,7 @@ export const AllProjectdata = [
     cover: "/project/PasswordGen.png",
     bgcolor: "bg-pink-500",
     link: "https://github.com/alok-mishra143/PasswordGen",
+    plink: "https://password-gen-xi.vercel.app/",
   },
   {
     title: "TO-DO List",
@@ -187,6 +203,7 @@ export const AllProjectdata = [
     cover: "/project/Todo.png",
     bgcolor: "bg-[#a3e635]",
     link: "https://github.com/alok-mishra143/to-do-list",
+    plink: "https://alok-mishra143.github.io/to-do-list/",
   },
   {
     title: "Ochi",
@@ -195,6 +212,7 @@ export const AllProjectdata = [
     cover: "/project/Ochi.png",
     bgcolor: "bg-[#b45309]",
     link: "https://github.com/alok-mishra143/Ochi",
+    plink: "https://ochi-alpha.vercel.app/",
   },
 ];
 

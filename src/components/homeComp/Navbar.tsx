@@ -3,6 +3,7 @@
 import React from "react";
 import { SocialMediaData } from "@/data/data";
 import Link from "next/link";
+import ShineBorder from "../magicUi/shineBorder";
 
 const Navbar = () => {
   return (
@@ -18,7 +19,13 @@ const Navbar = () => {
             aria-label={social.title}
             target="_blank"
           >
-            <social.icon className="w-6 h-6 hover:scale-125 transition-all " />
+            <ShineBorder
+              className="text-center text-2xl font-bold capitalize"
+              color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
+              key={social.id}
+            >
+              <social.icon className="sm:w-6 sm:h-6 hover:scale-125 transition-all w-3 h-3" />
+            </ShineBorder>
           </Link>
         ))}
       </div>

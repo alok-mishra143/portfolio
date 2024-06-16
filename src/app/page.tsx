@@ -5,21 +5,23 @@ import Footer from "@/components/homeComp/footer";
 import Project from "@/components/homeComp/project";
 import { VelocityScroll } from "@/components/ui/scrollbase-velocity";
 import { TracingBeam } from "@/components/ui/tracing-beam";
+import { cn } from "@/lib/utils";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black overflow-hidden w-full  ">
+    <div className="min-h-screen bg-black overflow-hidden w-full   ">
       <TracingBeam className="">
-        <div className="dark:bg-black bg-white  dark:bg-dot-white/[0.1] bg-dot-black/[0.2]">
+        <div className="dark:bg-black bg-white   ">
           <div className=" max-w-7xl mx-auto p-5">
             <Navbar />
+            <div className="w-screen h-[1px] bg-gray-800 -mt-8 -ml-16"></div>
             <HeroSection />
           </div>
         </div>
 
         <div className=" max-w-7xl mx-auto p-5 mt-20 z-50">
           <Skill />
-          <div className="flex flex-row relative">
+          <div className="flex flex-row relative ">
             <div className=" bg-black  w-[3%]  absolute h-[110%] z-50 -left-5 blur-sm"></div>
             <VelocityScroll
               text="Projects"
@@ -31,7 +33,7 @@ export default function Home() {
           <Project />
         </div>
         <div className="">
-          <div className=" max-w-7xl mx-auto p-5 mt-20">
+          <div className=" max-w-7xl mx-auto p-5 mt-20 ">
             <Footer />{" "}
           </div>
         </div>

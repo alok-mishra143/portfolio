@@ -4,11 +4,16 @@ import { ProjectData } from "@/data/data";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { DirectionAwareHover } from "../ui/direction-aware-hover";
+import AnimatedGradientText from "../magicUi/gradientText";
+import { ChevronRight } from "lucide-react";
+import { LinkPreview } from "../magicUi/Linkpreview";
 
 const project = () => {
   return (
     <div className="max-w-7xl mx-auto mt-20 p-5  relative">
-      <div className="bg-[#c026d3] w-40 h-40 absolute blur-[100px] rounded-full items-center justify-center translate-x-[100%] translate-y-[40%] -z-2 lg:translate-x-[280%] md:translate-x-[180%]"></div>
+      {/* <div className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 w-40 h-40 absolute blur-[70px] rounded-full items-center justify-center translate-x-[100%] translate-y-[40%] -z-2 lg:translate-x-[280%] md:translate-x-[180%]"></div> */}
+      <div className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 absolute  h-96 w-96 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blur-[200px] rounded-full"></div>
+
       <TittleButton
         tittle={"Projects 🟢"}
         classname="flex flex-col items-center justify-center rotate-6"
@@ -37,8 +42,20 @@ const project = () => {
       </div>
 
       <div className="flex justify-center items-center p-1  ">
-        <div className="rounded-lg bg-gradient-to-r from-[#ff00cc] to-[#3333ff] hover:from-[#ff33cc] hover:to-[#6633ff] hover:text-white inline-block p-3 m-5 hover:scale-105 transition-all">
-          <Link href={"/allproject"}> View all project</Link>
+        <div className="mt-10">
+          <Link href={"/allproject"}>
+            <AnimatedGradientText className="p-2 m-3">
+              🎉 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
+              <span
+                className={cn(
+                  `inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
+                )}
+              >
+                View all project
+              </span>
+              <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+            </AnimatedGradientText>
+          </Link>
         </div>
       </div>
     </div>

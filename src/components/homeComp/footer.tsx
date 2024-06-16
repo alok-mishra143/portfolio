@@ -7,13 +7,15 @@ import CustomButton from "./CustomButton";
 import { SocialMediaData } from "@/data/data";
 import Link from "next/link";
 import { AllLinks } from "@/data/data";
+import ShineBorder from "../magicUi/shineBorder";
+import BubbleText from "../magicUi/BubbleText";
 
 const Footer = () => {
   const email = AllLinks.email;
 
   return (
     <div
-      className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md relative "
+      className="h-[40rem] w-full  flex flex-col items-center justify-center overflow-hidden rounded-md relative   "
       id="connectme"
     >
       <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20">
@@ -40,7 +42,9 @@ const Footer = () => {
         <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
       </div>
       <div className=" flex items-center justify-center gap-5">
-        <h1 className="cursor-default">{email}</h1>
+        <h1 className="cursor-default">
+          <BubbleText word={email} />
+        </h1>
         <CustomButton name="COPY" />
       </div>
       <div className="flex items-center gap-5 mt-10 ">
@@ -51,7 +55,13 @@ const Footer = () => {
             aria-label={social.title}
             target="_blank"
           >
-            <social.icon className="w-6 h-6 hover:scale-125 transition-all" />
+            <ShineBorder
+              className="text-center text-2xl font-bold capitalize"
+              color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
+              key={social.id}
+            >
+              <social.icon className="w-6 h-6 hover:scale-125 transition-all" />
+            </ShineBorder>
           </Link>
         ))}
       </div>

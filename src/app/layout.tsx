@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { TracingBeam } from "@/components/ui/tracing-beam";
 
 const SpaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -24,6 +23,7 @@ export default function RootLayout({
           defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
+          forcedTheme="dark"
         >
           {children}
         </ThemeProvider>
