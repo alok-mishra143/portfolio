@@ -41,10 +41,10 @@ const Footer = () => {
         {/* Radial Gradient to prevent sharp edges */}
         <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
       </div>
-      <div className=" flex items-center justify-center gap-5">
-        <h1 className="cursor-default">
+      <div className=" flex items-center justify-center gap-5 ">
+        <p className="cursor-text xs:text-xl  text-sm ">
           <BubbleText word={email} />
-        </h1>
+        </p>
         <CustomButton name="COPY" />
       </div>
       <div className="flex items-center gap-5 mt-10 ">

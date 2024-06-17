@@ -8,11 +8,12 @@ import { Typewriter } from "react-simple-typewriter";
 import { AllLinks } from "@/data/data";
 import WordRotate from "../ui/word-rotate";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
     <div className=" min-h-[60vh]  flex items-center justify-center w-full   ">
-      <div className="w-full flex flex-col-reverse gap-16 lg:flex-row items-center justify-between">
-        <div className="space-y-10 text-center lg:text-left fadein ">
+      <motion.div className="w-full flex flex-col-reverse gap-16 lg:flex-row items-center justify-between">
+        <motion.div className="space-y-10 text-center lg:text-left ">
           <h1 className="text-xl lg:text-7xl font-bold sm:text-4xl">
             Nice to meet you! 👋 <br />
             <span className="  flex gap-3">
@@ -49,12 +50,12 @@ const HeroSection = () => {
               <TittleButton tittle={"Contact me "} />
             </Link>
           </div>
-        </div>
+        </motion.div>
 
         <div className="  fadein">
           <Shap />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

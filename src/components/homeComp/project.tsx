@@ -20,7 +20,7 @@ const project = () => {
       />
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5  pt-10">
         {ProjectData.map((item, index) => (
-          <Link href={item.link} key={index}>
+          <Link href={item.link} key={index} target="_blank">
             <div className={cn("p-1 rounded-md", item.bgcolor)}>
               <DirectionAwareHover
                 imageUrl={item.cover}
@@ -43,7 +43,7 @@ const project = () => {
 
       <div className="flex justify-center items-center p-1  ">
         <div className="mt-10">
-          <Link href={"/allproject"}>
+          <Link href={"/allproject"} target="_blank">
             <AnimatedGradientText className="p-2 m-3">
               🎉 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
               <span
