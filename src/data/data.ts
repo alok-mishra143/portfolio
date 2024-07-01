@@ -21,8 +21,9 @@ import {
 export const AllLinks = {
   github: "https://github.com/alok-mishra143",
   linkedin: "https://www.linkedin.com/in/alok-mishra143/",
-  X: "https://www.google.com",
-  resume: "https://www.google.com",
+  X: "http",
+  resume:
+    "https://drive.google.com/file/d/1uwWq_WtpO1-vRYEAqQBJHwfYBYeEk54f/view",
   email: "hey.alokmishra@gmail.com",
   leetcode: "https://leetcode.com/u/unknown_brain143/",
   description:

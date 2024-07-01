@@ -9,6 +9,7 @@ import Link from "next/link";
 import { AllLinks } from "@/data/data";
 import ShineBorder from "../magicUi/shineBorder";
 import BubbleText from "../magicUi/BubbleText";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   const email = AllLinks.email;
@@ -18,7 +19,7 @@ const Footer = () => {
       className="h-[40rem] w-full  flex flex-col items-center justify-center overflow-hidden rounded-md relative   "
       id="connectme"
     >
-      <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20">
+      <h1 className="md:text-7xl text-3xl lg:text-9xl text-center  font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 dark:from-neutral-950 to-neutral-200 dark:to-neutral-800 inset-x-0">
         ALOK MISHRA
       </h1>
       <div className="w-[40rem] h-40 relative">

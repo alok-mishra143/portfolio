@@ -8,12 +8,25 @@ import Project from "@/components/homeComp/project";
 import Section from "@/components/inView";
 import { VelocityScroll } from "@/components/ui/scrollbase-velocity";
 import { TracingBeam } from "@/components/ui/tracing-beam";
-import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black overflow-hidden w-full   ">
+    <div className="min-h-screen bg-black overflow-hidden w-full  relative ">
       <TracingBeam className="">
+        <motion.div
+          className="absolute  w-24 h-24 top-24 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500  blur-[50px] rounded-full opacity-75 hidden sm:flex"
+          initial={{ opacity: 0, scale: 0.5, x: -1000, y: -100 }}
+          animate={{ opacity: 1, scale: 1, x: 1350, y: 0 }}
+          transition={{ duration: 4, ease: "easeInOut" }}
+        ></motion.div>
+        <motion.div
+          className="absolute  w-24 h-24 top-24 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500  blur-[50px] rounded-full opacity-75 hidden sm:flex"
+          initial={{ opacity: 0, scale: 0.5, x: 1300, y: -100 }}
+          animate={{ opacity: 1, scale: 1, x: -180, y: 100 }}
+          transition={{ duration: 4, ease: "easeInOut" }}
+        ></motion.div>
         <div className="dark:bg-black bg-white   ">
           <Section>
             <div className=" max-w-7xl mx-auto p-5">
@@ -34,7 +47,7 @@ export default function Home() {
               <VelocityScroll
                 text="Projects"
                 default_velocity={4}
-                className="font-display text-center text-9xl font-extrabold tracking-[-0.02em] text-black drop-shadow-sm dark:text-white md:text-7xl md:leading-[5rem] -z-50"
+                className="font-display text-center text-9xl font-extrabold tracking-[-0.02em]  drop-shadow-sm  md:text-7xl md:leading-[5rem] -z-50 bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 dark:from-neutral-800 to-neutral-100 dark:to-neutral-700 inset-x-0"
               />
               <div className=" bg-black w-[5%]  absolute h-[110%] z-50 -right-5 blur-sm"></div>
             </div>
