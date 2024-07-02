@@ -17,13 +17,13 @@ export default function Home() {
       <TracingBeam className="">
         <motion.div
           className="absolute  w-24 h-24 top-24 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500  blur-[50px] rounded-full opacity-75 hidden sm:flex"
-          initial={{ opacity: 0, scale: 0.5, x: -1000, y: -100 }}
+          initial={{ opacity: 0, scale: 1.5, x: -1000, y: -100 }}
           animate={{ opacity: 1, scale: 1, x: 1350, y: 0 }}
           transition={{ duration: 4, ease: "easeInOut" }}
         ></motion.div>
         <motion.div
           className="absolute  w-24 h-24 top-24 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500  blur-[50px] rounded-full opacity-75 hidden sm:flex"
-          initial={{ opacity: 0, scale: 0.5, x: 1300, y: -100 }}
+          initial={{ opacity: 0, scale: 1.5, x: 1300, y: -100 }}
           animate={{ opacity: 1, scale: 1, x: -180, y: 100 }}
           transition={{ duration: 4, ease: "easeInOut" }}
         ></motion.div>

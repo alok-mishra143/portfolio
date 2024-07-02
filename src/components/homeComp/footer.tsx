@@ -19,7 +19,8 @@ const Footer = () => {
       className="h-[40rem] w-full  flex flex-col items-center justify-center overflow-hidden rounded-md relative   "
       id="connectme"
     >
-      <h1 className="md:text-7xl text-3xl lg:text-9xl text-center  font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 dark:from-neutral-950 to-neutral-200 dark:to-neutral-800 inset-x-0">
+      <motion.div className="absolute  w-[80%] h-8  bottom-0 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500  blur-[100px] rounded-full   sm:flex animate-gradient"></motion.div>
+      <h1 className="md:text-8xl sm:text-7xl text-5xl lg:text-9xl text-center  font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 dark:from-neutral-950 to-neutral-200 dark:to-neutral-800 inset-x-0">
         ALOK MISHRA
       </h1>
       <div className="w-[40rem] h-40 relative">
@@ -43,9 +44,9 @@ const Footer = () => {
         <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
       </div>
       <div className=" flex items-center justify-center gap-5 ">
-        <p className="cursor-text xs:text-xl  text-sm ">
+        <div className="cursor-text xs:text-xl  text-sm ">
           <BubbleText word={email} />
-        </p>
+        </div>
         <CustomButton name="COPY" />
       </div>
       <div className="flex items-center gap-5 mt-10 ">

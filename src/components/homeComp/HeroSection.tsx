@@ -9,6 +9,7 @@ import { AllLinks } from "@/data/data";
 import WordRotate from "../ui/word-rotate";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
+import { TextGenerateEffect } from "../magicUi/TextGen";
 const HeroSection = () => {
   return (
     <div className=" min-h-[60vh]  flex items-center justify-center w-full   ">
@@ -31,9 +32,13 @@ const HeroSection = () => {
               </span>
             </span>{" "}
           </h1>
-          <p className=" text-gray-300 text-lg max-w-xl">
-            {AllLinks.description}
-          </p>
+          <div className=" text-gray-300 max-w-xl">
+            {/* {AllLinks.description} */}
+            <TextGenerateEffect
+              words={AllLinks.description}
+              className="text-gray-300  max-w-xl"
+            />
+          </div>
           <div className="flex items-center gap-7">
             <Link
               href={AllLinks.resume}

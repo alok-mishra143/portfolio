@@ -126,3 +126,13 @@
     opacity: 1;
   }
 }
+
+/* for scroll bar */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  display: none;
+}

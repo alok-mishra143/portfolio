@@ -21,7 +21,7 @@ import {
 export const AllLinks = {
   github: "https://github.com/alok-mishra143",
   linkedin: "https://www.linkedin.com/in/alok-mishra143/",
-  X: "http",
+  X: "https://x.com/heyalokmishra",
   resume:
     "https://drive.google.com/file/d/1uwWq_WtpO1-vRYEAqQBJHwfYBYeEk54f/view",
   email: "hey.alokmishra@gmail.com",
