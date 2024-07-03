@@ -7,7 +7,6 @@ import TittleButton from "../ui/TittleButton";
 import { Typewriter } from "react-simple-typewriter";
 import { AllLinks } from "@/data/data";
 import WordRotate from "../ui/word-rotate";
-import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { TextGenerateEffect } from "../magicUi/TextGen";
 const HeroSection = () => {
@@ -15,7 +14,7 @@ const HeroSection = () => {
     <div className=" min-h-[60vh]  flex items-center justify-center w-full   ">
       <motion.div className="w-full flex flex-col-reverse gap-16 lg:flex-row items-center justify-between">
         <motion.div className="space-y-10 text-center lg:text-left ">
-          <h1 className="text-xl lg:text-7xl font-bold sm:text-4xl">
+          <h1 className="text-4xl lg:text-7xl font-bold sm:text-4xl">
             Nice to meet you! 👋 <br />
             <span className="  flex gap-3">
               I&apos;m{" "}
@@ -32,7 +31,7 @@ const HeroSection = () => {
               </span>
             </span>{" "}
           </h1>
-          <div className=" text-gray-300 max-w-xl">
+          <div className="  max-w-xl justify-start">
             {/* {AllLinks.description} */}
             <TextGenerateEffect
               words={AllLinks.description}
